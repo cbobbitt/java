@@ -1,0 +1,12 @@
+Scope breaks down what parts of the syntax is being affected by a function, object, variable, ect. 
+Global scope affects the syntax throughout and can span across more than one file. It is declared outside a function. 
+Block scope aspects affect the syntax that is within its “block”.  Functions, objects and variables remain as defined in the block. Outside of this block, the syntax will follow Global scope rules.
+
+Global variables are avoided to reduce errors of unintended side effects, such as overriding variables used later in the syntax. 
+
+
+Use strict is an expression that will not use variables with undeclared values, example: It will not try to use variables that were simple typing errors, and will catch other errors that would have ended up accidentally creating a new global variable.
+
+What are side effects, and what is a pure function?
+Side effects happen when a functions reaches a variable it is not intended to, more likely to happen in Global variables.
+A Pure function returns the same value and same results, that it declared to have and doesn’t have any global scope variables.
